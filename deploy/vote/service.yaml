@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2022-06-17T14:25:17Z"
+  labels:
+    app: vote
+  name: vote
+  namespace: instavote
+  resourceVersion: "21640"
+  uid: f87792dd-4d86-43c3-a50d-69846de82dd3
+spec:
+  clusterIP: 10.96.19.56
+  clusterIPs:
+  - 10.96.19.56
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: "80"
+    nodePort: 30000
+    port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: vote
+  sessionAffinity: None
+  type: NodePort
