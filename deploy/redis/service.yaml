@@ -4,7 +4,6 @@ metadata:
   creationTimestamp: null
   labels:
     app: redis
-    tier: front
   name: redis
 spec:
   ports:
