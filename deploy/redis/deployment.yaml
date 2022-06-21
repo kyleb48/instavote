@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: "2022-06-17T14:28:37Z"
+  creationTimestamp: null
   generation: 1
   labels:
     app: redis
