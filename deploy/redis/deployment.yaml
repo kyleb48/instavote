@@ -28,7 +28,7 @@ spec:
         app: redis
     spec:
       containers:
-      - image: redis:5.0.4
+      - image: redis:alpine-dry-run=client
         imagePullPolicy: IfNotPresent
         name: redis
         resources: {}
