@@ -3,16 +3,15 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: vote
-    tier: front
-  name: vote
+    app: redis
+  name: redis
+  namespace: eurocontrolinstavote
 spec:
   ports:
-  - name: "80"
-    nodePort: 30300
-    port: 80
+  - name: "6379"
+    port: 6379
     protocol: TCP
-    targetPort: 80
+    targetPort: 6379
   selector:
-    app: vote
-  type: NodePort
+    app: redis
+  type: ClusterIP
