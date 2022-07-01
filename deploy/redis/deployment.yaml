@@ -6,7 +6,7 @@ metadata:
   labels:
     app: redis
   name: redis
-  namespace: eurocontrolinstavote
+  namespace: instavote
   resourceVersion: "21933"
   #uid: 80d4663b-72c4-49b4-b07f-9a123e8bb252
 spec:
