@@ -5,13 +5,11 @@ resources:
 patchesStrategicMerge:
 - deployment.yaml
 - service.yaml
-
 replicas:
-  - name: vote
-    count: 4
-    
+- name: vote
+  count: 7
 images:
-  - name: schoolofdevops/vote
-    newTag: v8 # {"$imagepolicy": "flux-system:vote:tag"}
-    
- namespace: instavote
+- name: schoolofdevops/vote
+  newName: dopsdemo/vote
+  newTag: v8 # {"$imagepolicy": "flux-system:vote:tag"}
+namespace: instavote
