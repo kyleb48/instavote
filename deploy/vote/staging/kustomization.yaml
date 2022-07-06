@@ -11,5 +11,5 @@ replicas:
 images:
 - name: schoolofdevops/vote
   newName: kyleb48/vote
-  newTag: main-bc8ff294-1657135953 # {"$imagepolicy": "flux-system:vote:tag"}
+  newTag: main-658e70dc-1657138624 # {"$imagepolicy": "flux-system:vote:tag"}
 namespace: instavote
