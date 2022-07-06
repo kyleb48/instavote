@@ -11,5 +11,5 @@ replicas:
 images:
 - name: schoolofdevops/vote
   newName: dopsdemo/vote
-  newTag: v8 # {"$imagepolicy": "flux-system:vote:tag"}
+  newTag: main-bc8ff294-1657135953 # {"$imagepolicy": "flux-system:vote:tag"}
 namespace: instavote
