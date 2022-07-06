@@ -10,6 +10,6 @@ replicas:
   count: 7
 images:
 - name: schoolofdevops/vote
-  newName: dopsdemo/vote
+  newName: kyleb48/vote
   newTag: main-bc8ff294-1657135953 # {"$imagepolicy": "flux-system:vote:tag"}
 namespace: instavote
