@@ -7,7 +7,7 @@ patchesStrategicMerge:
 - service.yaml
 replicas:
 - name: vote
-  count: 6
+  count: 4
 images:
 - name: schoolofdevops/vote
   newName: kyleb48/vote
